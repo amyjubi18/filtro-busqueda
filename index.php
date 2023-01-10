@@ -31,52 +31,45 @@
             <h1 class="text-center text-5xl	 ">Archivos</h1>
 
             <div class=" max-w-fit	p-8 my-6  border-4 ">
-
-
-
-    
-
-            <div class="overflow-x-auto flex justify-start">
-            <form class="m-auto w-50 mt-4 mb-2 " action="" method="POST" enctype="multipart/form-data">
-        
-
-        <div class="mb-2">
-
             
             
-        <button class="text-lg flex  justify-start focus:outline-none rounded text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring--800"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg><a href="archivo-empleados.php">Cargar Archivos
-            </a></button>
-            </div>
+            <form class=" w-full max-w-sm m-auto w-50 mt-4 mb-2 " action="" method="POST" enctype="multipart/form-data">
+            
+            
+            <div class="flex space-x-2 justify-center">
+            <span class="text-xs inline-block py-1 px-5 leading-none text-center whitespace-nowrap align-baseline ">
 
-    </form>
-    <br><br>
-                <div class="justify-center h-sreen mt-1">
-                    <label for="num_registros" class="block text-gray-700  mt-2 text-2xl	">Mostrar: </label>
-                </div>
+            <label for="num_registros" class=" text-gray-700  mt-2 text-2xl	">Mostrar: </label>
 
-                <div class="justify-center h-sreen mt-1">
-                    <select name="num_registros" id="num_registros" class="block ml-2 w-fit bg-white mt-2 border-4 border-blue-400  rounded-lg cursor-pointer hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight">
+            </span>
+            <span class="text-lg inline-block  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline ">
+                
+            <select name="num_registros" id="num_registros" class=" ml-2 w-fit bg-white mt-2 border-4 border-blue-400  rounded-lg cursor-pointer hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight">
                         <option class="px-4 py-3 pr-8 hover:bg-gray-200 hover:px-2" value="10">10</option>
                         <option class="px-4 py-3 pr-8 hover:bg-gray-200 hover:px-2" value="25">25</option>
                         <option class="px-4 py-3 pr-8 hover:bg-gray-200 hover:px-2" value="50">50</option>
                         <option class="px-4 py-3 pr-8 hover:bg-gray-200 hover:px-2" value="100">100</option>
                     </select>
-                </div>
-                <br>
+            </span>
+            <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline ">
 
-                 <div class="justify-center h-sreen mt-1">
-                    <label for="num_registros" class="text-2xl mt-2 text-gray-700 invisible"> Registros </label>
-                </div> 
-                <div class="justify-beteween columns-5"></div>
+            <button class="text-lg flex inline-block  justify-start focus:outline-none rounded text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-800"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"></path></svg><a href="archivo-empleados.php">Cargar Archivos</a></button>
 
-                <div class="justify-center h-sreen mt-2">
-                    <label for="campo" class="ml-2 block text-gray-700 mt-2 text-2xl">Buscar: </label>
-                </div>
-                <div class="columns-auto justify-center h-sreen mt-1">
-                    <input type="text" name="campo" id="campo" class="border-4 border-blue-400 ml-2 mt-2 rounded-lg px-4 py-2 focus:border-blue-500">
-                </div>
-            </div>
+            </span>
+            <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline rounded">
+            <label for="campo" class="ml-2  text-gray-700 mt-2 text-2xl">Buscar: </label>
+            </span>
+            <span class="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline  rounded">
+                
+            <input type="text" name="campo" id="campo" class="border-4 border-blue-400 ml-2 mt-2 rounded-lg px-4 py-2 focus:border-blue-500">
+            </span>
+            
+                                </div>
+            </form>
+            
+            
 
+             
             <div class="row py-4">
                 <div class="columns-1">
                     <table class='table w-full text-gray-800 dark:text-gray-400 border-solid border-gray-600 sm:p-4'>
